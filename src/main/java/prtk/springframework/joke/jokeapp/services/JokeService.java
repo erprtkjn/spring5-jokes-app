@@ -1,4 +1,4 @@
-package prtk.springframework.joke.jokeapp.service;
+package prtk.springframework.joke.jokeapp.services;
 
 public interface JokeService {
 

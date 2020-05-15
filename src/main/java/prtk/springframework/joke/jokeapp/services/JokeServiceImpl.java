@@ -1,7 +1,9 @@
-package prtk.springframework.joke.jokeapp.service;
+package prtk.springframework.joke.jokeapp.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
+import org.springframework.stereotype.Service;
 
+@Service
 public class JokeServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
@@ -12,6 +14,6 @@ public class JokeServiceImpl implements JokeService {
 
     @Override
     public String getJoke() {
-        return null;
+        return chuckNorrisQuotes.getRandomQuote();
     }
 }
